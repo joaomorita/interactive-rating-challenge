@@ -1,9 +1,11 @@
 const btnSubmit = document.getElementById('btn')
 let rateButton = document.querySelectorAll('li')
 let rateOutput = document.getElementById('rate')
+const index = document.getElementById('index-container')
 let thanks = document.getElementById('thanks')
 
 btnSubmit.addEventListener('click', function(){
+    index.style.display = 'none'
     thanks.style.display = 'block'
     rateOutput.innerHTML= `You selected ${nota} out 5`
 })
